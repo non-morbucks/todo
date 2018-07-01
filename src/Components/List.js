@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import ListItem from './ListItem';
+import React, { Component } from "react";
+import ListItem from "./ListItem";
 class List extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  };
-    }
-    render() {
-        return (
-            <div>
-                <div
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <div>
+        <div
           style={{
             padding: 2,
             height: 400,
@@ -16,11 +16,11 @@ class List extends Component {
             overflowX: "hidden"
           }}
         >
-        <ListItem todos={this.props.todos} />
+          <ListItem todos={this.props.todos} />
         </div>
-            </div>
-        );
-    }
+      </div>
+    );
+  }
 }
 
 export default List;

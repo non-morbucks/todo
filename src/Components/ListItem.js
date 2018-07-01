@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 class ListItem extends Component {
-    
-    render() {
-        return (
-            <div>
-                {this.props.todos.map (item =>(
-                <div
+  render() {
+    return (
+      <div>
+        {this.props.todos.map(item => (
+          <div key={item.id} 
             style={{
               backgroundColor: "#fefefe",
               borderColor: "#ccc",
@@ -18,14 +17,12 @@ class ListItem extends Component {
               paddingBottom: 19
             }}
           >
-            <input type="checkbox" checked /> {item.name}
-          </div>))}
-                
-         
-
-            </div>
-        );
-    }
+            <input type="checkbox"/> {item.name}
+          </div>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default ListItem;
